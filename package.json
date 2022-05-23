@@ -1,5 +1,5 @@
 {
-  "name": "vue-mk-admin-p",
+  "name": "vaeshu-admin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
     "core-js": "^3.8.3",
+    "element-plus": "^2.2.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
@@ -34,7 +36,10 @@
     "husky": "^7.0.1",
     "lint-staged": "^12.4.1",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "sass-loader": "^12.0.0",
+    "svg-sprite-loader": "^6.0.9",
+    "unplugin-auto-import": "^0.7.2",
+    "unplugin-vue-components": "^0.19.5"
   },
   "config": {
     "commitizen": {
