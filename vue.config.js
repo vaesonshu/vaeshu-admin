@@ -10,14 +10,14 @@ const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 module.exports = defineConfig({
   transpileDependencies: true,
   configureWebpack: {
-    devServer: {
-      proxy: {
-        '/api': {
-          target: '',
-          changeOrigin: true
-        }
-      }
-    },
+    // devServer: {
+    //   proxy: {
+    //     '/api': {
+    //       target: '',
+    //       changeOrigin: true
+    //     }
+    //   }
+    // },
     plugins: [
       AutoImport({
         resolvers: [ElementPlusResolver()]

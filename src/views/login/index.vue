@@ -55,7 +55,7 @@
 <script setup>
 import { ref } from 'vue'
 import { validatePassword } from './rules'
-import { useStore } from 'vuex'
+// import { useStore } from 'vuex'
 // 数据源
 const loginForm = ref({
   username: 'admin',
@@ -88,7 +88,7 @@ const onChangePwdType = () => {
   }
 }
 const loading = ref(false)
-const store = useStore()
+// const store = useStore()
 const loginFromRef = ref(null)
 const handleLogin = () => {
   console.log(loginFromRef.value)
@@ -97,13 +97,13 @@ const handleLogin = () => {
     if (!valid) return
     // 触发登录动作
     loading.value = true
-    store
-      .dispatch('user/login', loginForm.value)
-      .then(() => {
-        loading.value = false
-        // 进行登录后处理
-      })
-      .catch()
+    // store
+    //   .dispatch('user/login', loginForm.value)
+    //   .then(() => {
+    //     loading.value = false
+    //     // 进行登录后处理
+    //   })
+    //   .catch()
     // (err = {
     //   // console.log(err)
     //   // loading.value = true
